@@ -1,35 +1,22 @@
 <template>
-  <div class="container">
-    <div v-for="(elemento, index) in books.library" :key="index" class="card">
-      <img :src="elemento.book.cover" :alt="elemento.book.title" class="cover">
-      <div class="info">
-        <h2>{{ elemento.book.title }}</h2>
-        <p>{{ elemento.book.synopsis }}</p>
-        <p><strong>Autor:</strong> {{ elemento.book.author.name }}</p>
-        <p><strong>Publicado en:</strong> {{ elemento.book.year }}</p>
-      </div>
+  <div class="card">
+    <img :src="elemento.book.cover" :alt="elemento.book.title" class="cover" />
+    <div class="info">
+      <h2>{{ elemento.book.title }}</h2>
+      <p>{{ elemento.book.synopsis }}</p>
+      <p><strong>Autor:</strong> {{ elemento.book.author.name }}</p>
+      <p><strong>Publicado en:</strong> {{ elemento.book.year }}</p>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import booksData from '@/path/books.json';
-
-const books = ref({ library: [] });
-
-onMounted(() => {
-  books.value = booksData;
+defineProps({
+  elemento: Object,
 });
 </script>
 
 <style scoped>
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
 .card {
   width: 250px;
   border: 1px solid #ddd;
@@ -44,5 +31,12 @@ onMounted(() => {
 }
 .info {
   padding: 10px;
+  font-size: 0.9em;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin: 0;
+  font-weight: bolder;
 }
 </style>
