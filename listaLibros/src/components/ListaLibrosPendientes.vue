@@ -1,46 +1,33 @@
 <template>
-    <div class="lista-libros">
-      <h2>Lista de Lectura</h2>
-      <div class="libros-container">
-        <CartaLibro
-          v-for="libro in libros"
-          :key="libro.ISBN"
-          :libro="libro"
-          @agregarAListaPendientes="agregarAListaPendientes"
-        />
-      </div>
+  <div>
+    <h2>Libros Pendientes</h2>
+    <div class="container">
+      <CartaLibro 
+        v-for="(libro, index) in libros" 
+        :key="index" 
+        :libro="libro" 
+        @click="devolver(libro)"
+      />
     </div>
-  </template>
-  
-  <script>
-  import CartaLibro from "./CartaLibro.vue";
-  
-  export default {
-    props: {
-      libros: Array,
-    },
-    components: {
-      CartaLibro,
-    },
-    methods: {
-      eliminarDeListaPendientes(libro) {
-        this.$emit("eliminarDeListaPendientes", libro);
-      },
-    },
-  };
-  </script>
-  
-  <style scoped>
-  .lista-libros {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .libros-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  </style>
-  
+  </div>
+</template>
+
+<script setup>
+import CartaLibro from './CartaLibro.vue';
+
+defineProps({ libros: Array });
+const emit = defineEmits(["devolver"]);
+
+const devolver = (libro) => {
+  emit("devolver", libro);
+};
+</script>
+
+<style scoped>
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+</style>

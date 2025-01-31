@@ -1,16 +1,19 @@
 <template>
-    <div class="container">
-      <ListaLibrosDisponibles />
-    </div>
-  </template>
+    
+    <GestorLibros />
+    
+    
+</template>
   
-  <script setup>
-  import ListaLibrosDisponibles from './components/ListaLibrosDisponibles.vue';
-  </script>
+<script setup>
+  import GestorLibros from './components/GestorLibros.vue';
+</script>
   
-  <style scoped>
-  .container {
-    padding: 20px;
-  }
-  </style>
+  
+  
+<style scoped>
+    
+
+</style>
+  
   

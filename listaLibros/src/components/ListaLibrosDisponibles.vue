@@ -1,20 +1,26 @@
 <template>
-  <h1>Lista de Libros Disponibles</h1>
-  <div class="container">
-    <CartaLibro v-for="(elemento, index) in books.library" :key="index" :elemento="elemento" /> 
+  <div>
+    <h2>Libros Disponibles</h2>
+    <div class="container">
+      <CartaLibro 
+        v-for="(libro, index) in libros" 
+        :key="index" 
+        :libro="libro" 
+        @click="mover(libro)"
+      />
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import CartaLibro from "./CartaLibro.vue";
-import booksData from '@/path/books.json'; 
+import CartaLibro from './CartaLibro.vue';
 
-const books = ref({ library: [] });
+defineProps({ libros: Array });
+const emit = defineEmits(["mover"]);
 
-onMounted(() => {
-  books.value = booksData;
-});
+const mover = (libro) => {
+  emit("mover", libro);
+};
 </script>
 
 <style scoped>
@@ -23,11 +29,5 @@ onMounted(() => {
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-}
-h1 {
-  text-align: center;
-  margin: 20px 0;
-  font-size: 2em;
-  font-weight: bolder;
 }
 </style>
