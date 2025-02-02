@@ -1,14 +1,16 @@
 ## 📖 PT_ListaLibrosVue
 
-🚀 Proyecto Vue.js - Biblioteca Virtual
+# 🚀 Proyecto Vue.js - Biblioteca Virtual
 
-Autor: Fran Garcia
+### Autor: Fran Garcia
 
-🌍 Enlace al Sitio Web
+# 🌍 Enlace al Sitio Web
 
-🔗 Accede a la plataforma 🚀
+# rococo-cassata-36d49b.netlify.app
 
-📝 Sobre el Proyecto
+
+
+# 📝 Sobre el Proyecto
 
 Este es un proyecto en continuo desarrollo, concebido para aprender y mejorar en Vue.js. Su función principal es emular una librería digital donde los usuarios pueden:
 
@@ -20,7 +22,7 @@ Guardar preferencias entre sesiones.
 
 En el futuro, se planea agregar funcionalidades como la compra de libros o recomendaciones personalizadas. Es un proyecto colaborativo abierto a mejoras.
 
-🌟 Funcionalidades
+## 🌟 Funcionalidades
 
 ✔️ Búsqueda de libros - Filtros por categoría y cantidad de páginas.
 ✔️ Lista de favoritos - Guarda títulos de interés para revisarlos después.
@@ -28,13 +30,13 @@ En el futuro, se planea agregar funcionalidades como la compra de libros o recom
 ✔️ Desarrollo continuo - Evolucionando con nuevas características y mejoras.
 ✔️ Persistencia de datos - Conserva la información incluso después de cerrar el navegador.
 
-🔧 Tecnologías Implementadas
+## 🔧 Tecnologías Implementadas
 
 🎯 Vue.js 3 - Framework progresivo de JavaScript.
 🛠 Vitest - Herramienta para pruebas unitarias en Vue.js.
 🎨 CSS personalizado - Estilos adaptados para una experiencia fluida.
 
-⚙️ Instalación y Ejecución
+# ⚙️ Instalación y Ejecución
 
 Para ejecutar este proyecto en tu entorno local, sigue los siguientes pasos:
 
@@ -54,14 +56,14 @@ npm install
 
 npm run dev
 
-🎨 Diseño y Funcionamiento
+# 🎨 Diseño y Funcionamiento
 
 Algunas imágenes del diseño y sus principales características:
 
 📸 ![Captura](https://github.com/user-attachments/assets/3e4aa861-fed4-45c2-8138-f95e2b32929d)
 
 
-🤝 Cómo Contribuir
+# 🤝 Cómo Contribuir
 
 Si deseas colaborar en la evolución del proyecto, sigue estos pasos:
 
@@ -81,7 +83,7 @@ git push origin nueva-funcionalidad
 
 Abre un Pull Request en GitHub.
 
-👥 Equipo y Colaboradores
+# 👥 Equipo y Colaboradores
 
 Creador: Fran Garcia [@frang6]
 
@@ -89,4 +91,4 @@ Colaboradores: ¡Aún no hay! Anímate a participar.
 
 📩 Si tienes dudas o sugerencias, abre una issue en el repositorio.
 
-🌟 ¡Gracias por tu interés en este proyecto! 💙
+## 🌟 ¡Gracias por tu interés en este proyecto! 💙
