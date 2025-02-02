@@ -1,18 +1,20 @@
 <template>
     
     <section id="dispobibles">
-        <ListaLibrosDisponibles 
-        :libros="librosDisponibles" 
-        @mover="moverLibro"
-      />
+          <ListaLibrosDisponibles 
+          :libros="librosDisponibles" 
+          @mover="moverLibro"
+        />
+      </section>
+        
+      <section id="pendientes"> 
+        <ListaLibrosPendientes 
+          :libros="librosPendientes" 
+          @devolver="devolverLibro"
+        />
     </section>
-      
-    <section id="pendientes"> 
-      <ListaLibrosPendientes 
-        :libros="librosPendientes" 
-        @devolver="devolverLibro"
-      />
-    </section>
+    
+    
   </template>
   
   <script setup>
@@ -43,6 +45,9 @@
 </script>
   
 <style scoped>
+
+
+
   
 </style>
   

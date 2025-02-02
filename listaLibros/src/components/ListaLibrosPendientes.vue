@@ -30,4 +30,8 @@ const devolver = (libro) => {
   gap: 20px;
   padding: 20px;
 }
+
+h2 {
+  text-align: center;
+}
 </style>

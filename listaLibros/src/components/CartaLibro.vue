@@ -1,12 +1,6 @@
 <template>
   <div class="card" @click="emitirClick">
-    <img :src="libro.cover" :alt="libro.title" class="cover">
-    <div class="info">
-      <h2>{{ libro.title }}</h2>
-      <p>{{ libro.synopsis }}</p>
-      <p><strong>Autor:</strong> {{ libro.author.name }}</p>
-      <p><strong>Publicado en:</strong> {{ libro.year }}</p>
-    </div>
+    <img :src="libro.cover" :alt="libro.title">
   </div>
 </template>
 
@@ -22,24 +16,27 @@ const emitirClick = () => {
 </script>
 
 <style scoped>
-.card {
-  width: 250px;
-  border: 1px solid #ddd;
+
+.card{
+  background-color: rgb(255, 255, 255);
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  overflow: hidden;
   transition: transform 0.2s;
+  width: 150px;
 }
-.card:hover {
+
+.card:hover{
   transform: scale(1.05);
 }
-.cover {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding: 5px;
 }
-.info {
-  padding: 10px;
-}
+
+
 </style>
