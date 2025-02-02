@@ -1,4 +1,4 @@
-📖 PT_ListaLibrosVue
+## 📖 PT_ListaLibrosVue
 
 🚀 Proyecto Vue.js - Biblioteca Virtual
 
@@ -58,8 +58,8 @@ npm run dev
 
 Algunas imágenes del diseño y sus principales características:
 
-📸 [![Captura](https://github.com/user-attachments/assets/3e4aa861-fed4-45c2-8138-f95e2b32929d)
-]
+📸 ![Captura](https://github.com/user-attachments/assets/3e4aa861-fed4-45c2-8138-f95e2b32929d)
+
 
 🤝 Cómo Contribuir
 
